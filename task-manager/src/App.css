@@ -1,0 +1,181 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* PAGE BACKGROUND */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2933;
+}
+
+/* MAIN APP CENTER */
+.app-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  padding-left: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADINGS */
+h2 {
+  text-align: center;
+  color: #8a1e74;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #334155;
+}
+
+/* FORM CARD */
+.form-section {
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* LABELS */
+.form-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+/* INPUTS */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #eb259f;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* CHECKBOX */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* BUTTON ROW */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* BUTTONS */
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* PRIMARY BUTTON */
+button:first-child {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+button:first-child:hover {
+  background-color: #1e40af;
+}
+
+/* SECONDARY BUTTON */
+button:last-child {
+  background-color: #e5e7eb;
+  color: #1f2933;
+}
+
+button:last-child:hover {
+  background-color: #d1d5db;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* TABLE HEAD */
+th {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+/* TABLE BODY */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ROW HOVER */
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* ACTION BUTTONS */
+td button {
+  padding: 6px 12px;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+/* EDIT BUTTON */
+td button:first-child {
+  background-color: #22c55e;
+  color: white;
+}
+
+td button:first-child:hover {
+  background-color: #16a34a;
+}
+
+/* DELETE BUTTON */
+td button:last-child {
+  background-color: #ef4444;
+  color: white;
+}
+
+td button:last-child:hover {
+  background-color: #dc2626;
+}
+
+/* EMPTY STATE */
+tbody td[colspan] {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+}
